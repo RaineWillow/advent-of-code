@@ -33,7 +33,7 @@ def prog2(valls):
 				if prog1(newvals) == 19690720:
 					return str(x) + "|" + str(y)
 			except:
-				pass
+				print("out of bounds")
 
 print("result 1: " + str(prog1(vals[:])))
-print("result 2: " + prog2(vals[:]))
+print("result 2: " + str(prog2(vals[:])))
