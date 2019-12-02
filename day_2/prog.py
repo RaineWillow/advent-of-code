@@ -31,9 +31,9 @@ def prog2(valls):
 			newvals[2] = y
 			try:
 				if prog1(newvals) == 19690720:
-					print("result 2: " + str(x) + "|" + str(y))
+					return str(x) + "|" + str(y)
 			except:
 				pass
 
 print("result 1: " + str(prog1(vals[:])))
-prog2(vals[:])
+print("result 2: " + prog2(vals[:]))
