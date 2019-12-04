@@ -11,5 +11,5 @@ def prog1():
 def prog2():
 	pass
 
-print("Result 1: " + str(prog1))
-print("Result 2: " + str(prog2))
+print("Result 1: " + str(prog1()))
+print("Result 2: " + str(prog2()))
