@@ -26,6 +26,8 @@ def find(bag, rule):
 	if bag in rule:
 		return True
 	else:
+		if rule == {}:
+			return False
 		for item in rule:
 			if find(bag, ruleset[item]):
 				return True
