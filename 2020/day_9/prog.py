@@ -20,17 +20,13 @@ def prog1():
 			return lines[i]
 
 def prog2():
-	num = 144381670
+	num = prog1()
 	past_nums = []
 	for i in range(0, len(lines)):
 		past_nums = []
-		if i == 562:
-			continue
 		total = lines[i]
 		past_nums.append(lines[i])
 		for j in range(i+1, len(lines)):
-			if i == 562:
-				continue
 			total += lines[j]
 			past_nums.append(lines[j])
 			if total > num:
